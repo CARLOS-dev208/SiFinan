@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiFinan</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="areaHeader">
+        <div class="logo">
+          <h1><a href="#">SiFinan</a></h1>
+        </div>
+        <div class="login">
+          <p><a href="#">Login</a></p>
+        </div>
+      </div>
+    </header>
+    <main class="areaMain">
+      <div class="areaSimulacao">
+        <div class="simulador">
+          <h2>Simulação de Financiamento</h2>
+          <div class="areaInput">
+            <div>
+              <label for="valorFinanciado">Valor:</label>
+              <br />
+              <input
+                type="number"
+                name="valor"
+                id="valorFinanciado"
+                placeholder="200000"
+              />
+            </div>
+            <div>
+              <label for="prazoFinanciamento">Prazo (anos):</label>
+              <br />
+              <input
+                type="number"
+                name="prazo"
+                id="prazoFinanciamento"
+                placeholder="20"
+              />
+            </div>
+
+            <div>
+              <label for="jurosAnual">Juros ao ano:</label>
+              <br />
+              <input
+                type="number"
+                name="juros"
+                id="jurosAnual"
+                placeholder="0.08"
+              />
+            </div>
+          </div>
+          <div class="areaButton">
+            <input
+              type="button"
+              value="Limpar"
+              class="btn btnReset"
+              onclick="reset()"
+            />
+            <input
+              type="button"
+              value="Simular"
+              class="btn btnSimulate"
+              onclick="simularFinanciamento()"
+            />
+          </div>
+          <h2>Resultado</h2>
+          <div class="inputResult">
+            <label for="prazoMeses">Prazo (meses)</label>
+            <input type="text" name="meses" id="prazoMeses" disabled />
+            <label for="jurosMensal">Juros ao mês</label>
+            <input type="text" name="jurosMes" id="jurosMensal" disabled />
+            <label for="jurosAcumulados">Juros Acumulados</label>
+            <input
+              type="text"
+              name="jurosAcumulados"
+              id="jurosAcumulados"
+              disabled
+            />
+          </div>
+        </div>
+        <div class="ilustracao">
+          <img src="assets/image/undraw_fill_form_re_cwyf.svg" alt="" />
+        </div>
+      </div>
+      <div class="tabelaPrestacoes">
+        <table>
+          <thead>
+            <tr>
+              <th>Prestação</th>
+              <th>Amortização</th>
+              <th>Juros</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody class="tbodySimulacao">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <div class="areaFooter">
+        <small
+          >Desenvolvido por
+          <a href="https://www.robsonnatanael.com.br">Robson Natanael</a></small
+        >
+      </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
