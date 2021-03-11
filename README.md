@@ -25,7 +25,7 @@
 
 ## Sobre
 
-O SiFinan é um aplicação para simulação de financiamento, com base em dados fornecidos pelo usuário, que exibe o valor das primeiras prestações, de acordo com o Sistema de Amortizações Constantes (SAC).
+O SiFinan é uma aplicação para simulação de financiamento, com base em dados fornecidos pelo usuário, o mesmo exibe o valor das primeiras prestações, converte a taxa de juros anual para mensal, prazo de anos para meses e calcula os juros acumulados, de acordo com o Sistema de Amortizações Constantes (SAC).
 
 Projeto desenvolvido para obtenção de pontuação no Bootcamp de FrontEnd do IGTI.
 
@@ -55,7 +55,7 @@ $ live-server
 
 ## Licença
 
-Este projeto está sob licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Este projeto está sob licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Autor
 
